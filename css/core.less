@@ -1,0 +1,85 @@
+/* S T R U C T U R E
+----------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+html,body {
+  height: 100%;
+  }
+
+body {
+  background:  @grayLighter url(../img/bg-noise.gif) repeat;
+  font-family: @sans-serif;
+  font-size: @font-base;
+  } 
+
+/* S E L E C T O R S
+----------------------------------------------- */
+a {color:@green;text-decoration:none;.transition;}
+a:hover {color:lighten(@green, 50%);}
+h1, h2, h3, h4, h5, h6 { margin: 0 0 20px 0; }
+h1 {font-size: @font-base*2;}
+h2 {font-size: @font-base*1.8;}
+h3 {font-size: @font-base*1.5;}
+h4 {font-size: @font-base*1.4;}
+h5 {font-size: @font-base*1.2;}
+h6 {font-size: @font-base;}
+li {float:left; margin: 0 0 0 10px;}
+
+  
+/* H E A D E R
+----------------------------------------------- */
+header {
+  .block
+  }
+
+#logo {
+  background:url(../img/logo.png) no-repeat left bottom;
+  text-indent:-9999px;
+  display: block;
+  width: 174px;
+  height: 259px;
+  .left
+  }
+
+/* C O N T E N T
+----------------------------------------------- */
+#content {
+  position:relative;
+  margin-top: 40px;
+  padding:20px;
+  }
+
+/* F O O T E R
+----------------------------------------------- */
+footer {
+  bottom: 0;
+  color: @watermark;
+  padding: 20px;
+  position: absolute;
+  }
+
+/* C L E A R F I X
+----------------------------------------------- */
+.group:after {
+  clear:both;
+  content:".";
+  height:0;
+  visibility:hidden;
+  display: block;
+  }
+
+/* L A N D I N G
+----------------------------------------------- */
+#content-landing {
+  min-height: 200px;
+  width: 100%;
+  .linear-gradient (0,0,0,.1,255,255,255);
+  .left;
+}
+#header-landing {
+  .left;
+}
+
