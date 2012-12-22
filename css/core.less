@@ -11,6 +11,7 @@ html,body {
 
 body {
   background:  @grayLighter url(../img/bg-noise.gif) repeat;
+  color: #7c8ba7;
   font-family: @sans-serif;
   font-size: @font-base;
   } 
@@ -26,13 +27,29 @@ h3 {font-size: @font-base*1.5;}
 h4 {font-size: @font-base*1.4;}
 h5 {font-size: @font-base*1.2;}
 h6 {font-size: @font-base;}
-li {float:left; margin: 0 0 0 10px;}
+li {.left; margin: 0 0 0 10px;}
+p{
+  margin-bottom:10px;
+}
 
+/*  F O R M S
+----------------------------------------------- */
+input{
+  border: 1px solid #c5d3ee;
+  padding: 10px;
+  width: 300px;
+  .block;
+  .rounded-corners(8px);
+}
+input.button {
+  border:none;
+}
   
 /* H E A D E R
 ----------------------------------------------- */
 header {
-  .block
+  .block;
+  .left;
   }
 
 #logo {
@@ -77,5 +94,26 @@ footer {
 }
 #header-landing {
   .left;
+}
+.content-wrap {
+  background-color: @white;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  .box-shadow(0, 2px, 5px, .2);
+  .rounded-corners(16px)
+}
+.content-inner{
+  .clear
+}
+div.about p {
+  text-align: left;
+}
+
+.mc-field-group {
+  margin: 10px auto;
+  text-align: left;
+  width: 325px;
 }
 
